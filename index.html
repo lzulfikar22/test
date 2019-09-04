@@ -2,141 +2,82 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-        #container {
-            width: 800px;
-            margin: 0 auto;
-        }
-
-        header {
-            background-color: #eee;
-            min-height: 50px;
-            text-align: center;
-        }
-
-        .logo img {
-            width: 200px;
-        }
-
-        /* Ini buat menu */
-        .menu ul {
-            padding: 0;
-        }
-
-        .menu ul li {
-            display: inline-block;
-            position: relative;
-        }
-
-        .menu ul li a {
-            padding: 10px 20px;
-            text-decoration: none;
-        }
-
-        ul.submenu {
-            background-color: #eee;
-            border: 1px solid #ccc;
-            text-align: left;
-            position: absolute;
-            top: 20px;
-            left: 0;
-            display: none;
-        }
-
-        ul.submenu li {
-            display: block;
-        }
-
-        ul.submenu li a {
-            display: block;
-            padding: 5px 10px;
-        }
-
-        .menu ul li:hover ul.submenu {
-            display: block;
-        }
-
-        /* Ini buat konten */
-        #content {
-            background-color: #ddd;
-            min-height: 500px;
-            overflow: auto;
-        }
-
-        .thumbnail {
-            background-color: white;
-            text-align: center;
-            padding: 10px;
-            width: 225px;
-            margin: 10px;
-            float: left;
-        }
-
-        .thumbnail img {
-            width: 100%;
-        }
-
-        footer {
-            background-color: #ccc;
-            min-height: 50px;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
-    <script src="main.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Biodata</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
 </head>
 
 <body>
-    <div id="container">
+    <div id=container>
         <header>
-            <h1>Logo</h1>
-            <div class="logo">
-                <img src="https://devschool.id/resources/images/sample-logo.png" />
-            </div>
-            <div class="menu">
+            Saya Aku dan Diriku
+        </header>
+        <div id=middle>
+            <div class=menu>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a>
-                        <ul class="submenu">
-                            <li><a href="#">CV</a></li>
-                            <li><a href="#">Education</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                        </ul>
+                    <li>
+                        <a class="active" href="index.html">Saya</a>
                     </li>
-                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <a href="pemograman.html">Pemograman</a>
+                    </li>
+                    <li>
+                        <a href="music.html">Musik</a>
+                    </li>
                 </ul>
             </div>
-        </header>
-        <div id="content">
-            <h2>My Articles</h2>
-            <h2>My Products</h2>
-            <div class="thumbnail">
-                <img src="http://via.placeholder.com/250x150">
-                <h2>Product 2</h2>
-                <p>Rp 250.000</p>
-            </div>
-            <div class="thumbnail">
-                <img src="http://via.placeholder.com/250x150">
-                <h2>Product 2</h2>
-                <p>Rp 250.000</p>
-            </div>
-            <div class="thumbnail">
-                <img src="http://via.placeholder.com/250x150">
-                <h2>Product 2</h2>
-                <p>Rp 250.000</p>
-            </div>
-            <div class="thumbnail">
-                <img src="http://via.placeholder.com/250x150">
-                <h2>Product 2</h2>
-                <p>Rp 250.000</p>
+            <div id=content>
+                <div id=paragraph>
+                    <p>Saya adalah seorang yang sering bermain game dan membaca manga. Memiliki
+                        ketertarikan dalam <i>programming</i> dan desain web.
+                    </p>
+                    <p>
+                        Saya orang yg ingin menyelesaikan semua secepat mungkin, agar bisa beristirahat
+                        dan melanjutkan tugas lainnya. Namun ketika tugas itu sesuatu yang kurang saya kuasai
+                        atau saya sukai, maka agak lama untuk dibereskan
+                    </p>
+                </div>
+                <div id="biodata">
+                    <table>
+                        <tr>
+                            <th colspan="2">
+                                Biodata <br>
+                                <img src="images/foto.jpg">
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Nama</td>
+                            <td>M. Luthfi Zulfikar</td>
+                        </tr>
+                        <tr>
+                            <td>TTL</td>
+                            <td>Bandung, 22 Juni 1999</td>
+                        </tr>
+                        <tr>
+                            <td>Surel</td>
+                            <td>pizulfikar22@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div id="socmed">
+                                    <a href="https://www.github.com/lzulfikar22/">
+                                        <img src="images/github.png"></a>
+                                    <a href="https://www.facebook.com/lzulfikar22">
+                                        <img class="icon" src="images/facebook-logo-button.png"></a>
+                                    <a href="https://www.twitter.com/harunaoi">
+                                        <img class="icon" src="images/twttr.png"></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
         <footer>
-            <p>Copyright 2019</p>
+            footer
         </footer>
     </div>
 </body>

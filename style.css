@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    margin: auto;
+    overflow: auto;
+    padding: 0;
+}
+
+#container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+header {
+    background-color: #bbb;
+    height: 100px;
+}
+
+#middle {
+    min-height: 300px;
+    width: 100%;
+    overflow: auto;
+}
+
+.menu {
+    width: 25%;
+    background-color: #ccc;
+    float: left;
+    height: 100%;
+    position: left;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    height: 128px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.menu ul li a {
+    width: 100%;
+    height: 100%;
+    padding: 48px 0;
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul li a.active {
+    background-color: navy;
+    color: white;
+}
+
+.menu ul li a:hover:not(.active) {
+    background-color: white;
+    color: black;
+}
+
+.menu ul li:nth-child(1){
+    background-color: #aaa;
+}
+.menu ul li:nth-child(2){
+    background-color: #bbb;
+}
+.menu ul li:nth-child(3){
+    background-color: #ccc;
+}
+
+#content {
+    position: right;
+    width: 75%;
+    float: left;
+    background-color: #eee;
+    min-height: 350px;
+    padding: 15px;
+}
+
+footer {
+    height: 30px;
+    position: bottom;
+    background-color: #aaa;
+}
+
+#paragraph {
+    padding-right: 15px;
+    width: 66.66%;
+    float: left;
+    text-align: justify;
+}
+
+#biodata {
+    width: 33.33%;
+    float: left;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+#biodata table tr th img {
+    width: 50%;
+    height: auto;
+}
+
+.icon {
+    height: 32px;
+    width: 32px;
+}
+
+#socmed {
+    margin-top: 3px;
+    text-align: center;
+}
+
+.bar {
+    width: 200px;
+    height: 20px;
+    background-color: #fff;
+    border: black 1px solid;
+    padding: 0;
+    float: left;
+    display: block;
+}
+
+.pbar {
+    margin-top: -0.5px;
+    background-color: green;
+    width: 198px;
+    height: 18px;
+}
+
+.value {
+    margin: 2px;
+    font-size: 16px;
+}
+
+.keahlian {
+    display: block;
+    margin-bottom: 20px;
+}
