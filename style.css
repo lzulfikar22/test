@@ -15,8 +15,17 @@
 }
 
 header {
-    background-color: #bbb;
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px; 
+    color: whitesmoke;
+    font-size: 72px;
+    top: 50%;
 }
 
 #middle {
@@ -40,7 +49,7 @@ header {
 }
 
 .menu ul li {
-    height: 128px;
+    height: 140px;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -51,7 +60,7 @@ header {
 .menu ul li a {
     width: 100%;
     height: 100%;
-    padding: 48px 0;
+    padding: 62px 0;
     text-decoration: none;
     color: white;
 }
@@ -62,12 +71,12 @@ header {
 }
 
 .menu ul li a.active {
-    background-color: navy;
+    background-color: black;
     color: white;
 }
 
 .menu ul li a:hover:not(.active) {
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
 }
 
@@ -85,15 +94,18 @@ header {
     position: right;
     width: 75%;
     float: left;
-    background-color: #eee;
-    min-height: 350px;
+    background-color: white;
+    min-height: 420px;
     padding: 15px;
+    background-image: url("images/border.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
-
 footer {
     height: 30px;
     position: bottom;
-    background-color: #aaa;
+    color: white;
+    background-color: black;
 }
 
 #paragraph {
@@ -111,6 +123,7 @@ footer {
 table {
     border-collapse: collapse;
     margin: auto;
+    background-color: white;
 }
 
 table, th, td {
@@ -144,7 +157,7 @@ table, th, td {
 
 .pbar {
     margin-top: -0.5px;
-    background-color: green;
+    background-color: black;
     width: 198px;
     height: 18px;
 }
